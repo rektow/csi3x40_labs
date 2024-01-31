@@ -1,0 +1,123 @@
+/* Styles de base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* En-tête */
+header {
+    background-color: #151516; /* Couleur d'arrière-plan de l'en-tête */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    padding: 0;
+    list-style: none;
+    background-color: #333;
+    text-align: center;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+/* Effet de survol sur les liens */
+nav ul li a:hover {
+    background-color: #555;
+    transition: background-color 0.3s;
+}
+
+/* Section Projets */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.project-card {
+    width: calc(33% - 20px);
+    background-color: #ffffff; /* Fond blanc pour les cartes de projets */
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.custom-button {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Définir un rayon pour obtenir une forme circulaire */
+    margin-top: 50px;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+    }
+    .project-card {
+        width: 90%;
+    }
+}
+img {
+    width: 07%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+.section-p {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .recent-posts {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .post-item {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+  }
+  .post-item p {
+    padding-top: 20px;
+  }
+  .post-item h1 {
+    font-weight: 700;
+  }
