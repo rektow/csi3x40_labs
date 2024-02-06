@@ -8,7 +8,7 @@
         background-color: #000;
         color: #fff;
         margin: 0;
-        overflow: hidden; /* Empêche le défilement si le plateau est trop large */
+        overflow: hidden;
     }
 
     #gameBoard {
@@ -16,9 +16,9 @@
         border: 2px solid #fff;
         border-radius: 10px;
         background-color: #222;
-        max-width: 90vw; /* Assure que le jeu reste visible sans défilement horizontal */
-        white-space: pre-wrap; /* Garde les éléments du jeu sur une seule ligne ou s'adapte à la largeur de l'écran */
-        word-break: break-all; /* Assure que le contenu s'adapte à la largeur de l'élément */
+        max-width: 90vw; 
+        white-space: pre-wrap; 
+        word-break: break-all; 
     }
 
     .pacman {
