@@ -1,0 +1,39 @@
+
+    body {
+        font-family: 'Lucida Console', Monaco, monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        overflow: hidden; /* Empêche le défilement si le plateau est trop large */
+    }
+
+    #gameBoard {
+        padding: 20px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        background-color: #222;
+        max-width: 90vw; /* Assure que le jeu reste visible sans défilement horizontal */
+        white-space: pre-wrap; /* Garde les éléments du jeu sur une seule ligne ou s'adapte à la largeur de l'écran */
+        word-break: break-all; /* Assure que le contenu s'adapte à la largeur de l'élément */
+    }
+
+    .pacman {
+        color: yellow;
+    }
+
+    .ghost {
+        color: red;
+    }
+
+    .fruit {
+        color: lime;
+    }
+
+    .pill {
+        color: #ddd;
+    }
+
