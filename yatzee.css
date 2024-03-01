@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.die {
+    display: inline-block;
+    margin: 5px;
+    padding: 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: yellow;
+}
