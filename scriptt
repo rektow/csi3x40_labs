@@ -1,0 +1,33 @@
+function rollDice() {
+  fetch('index.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: 'action=rollDice',
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    
+  });
+}
+
+function holdDice(diceIndex) {
+  fetch('index.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: `action=holdDice&diceIndex=${diceIndex}`,
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    
+  });
+}
+
+// Exemple d'utilisation
+document.getElementById('rollDiceBtn').addEventListener('click', rollDice);
+
