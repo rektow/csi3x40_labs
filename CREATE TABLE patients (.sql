@@ -6,4 +6,3 @@ CREATE TABLE patients (
   numero_secu VARCHAR(255)
 );
 
--- Répétez pour chaque entité
