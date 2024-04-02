@@ -1,0 +1,6 @@
+### Patients
+- ID : Integer (auto-increment)
+- Nom : String
+- Prénom : String
+- Date de naissance : Date
+- Numéro de sécurité sociale : String
